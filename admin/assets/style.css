@@ -1,0 +1,75 @@
+a:link,a:visited {color:#094186;text-decoration:none;}
+
+body{
+  background: #e7e7e7;
+}
+
+#home-link{
+  color: #030463;
+  font-size: 20px;
+}
+
+#logout-link{
+  color: #926c1b;
+  font-size: 20px;
+}
+
+#information-data{
+    color: #272728;
+    border: 1px solid #bbbbbb;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 20px;
+}
+
+#update-link{
+  background: #afaf3e;
+}
+
+#delete-link{
+  background:#d72727;
+}
+
+#update-link, #delete-link{
+    color: white !important;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.back-link{
+  background: cornflowerblue;
+}
+.insert-new{
+  background: #7666f5;
+}
+.back-link, .insert-new{
+    color: white !important;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.car-item{
+    border: 1px solid #bdbaba;
+    padding: 4px;
+    margin: 5px;
+    border-radius: 5px;
+    box-shadow: 2px 1px 3px 0px #888888;
+    font-size:20px;
+}
+
+.middle{
+    max-width:1200px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+#header .middle{
+  margin-bottom:10px;
+}
+
+#header .middle, #main .middle{
+    border: 1px solid #c1c1c1;
+    border-radius: 5px;
+}
+

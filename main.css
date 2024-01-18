@@ -1,0 +1,77 @@
+a:link,a:visited {color:#094186;text-decoration:none;}
+a:hover {color:#051b36;}
+
+#wrapper{
+    background: #d3e0f9;
+    min-height: 100vh;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#header{
+    display: flex;
+}
+
+#main{
+    flex: 1;
+}
+
+.middle{
+    max-width:1200px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+#left-side{
+    flex: 1 1 0px;
+    padding: 5px;
+}
+
+#right-side{
+    flex: 1 1 0px;
+    padding: 5px;
+}
+
+#car-block{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 5px;
+}
+.car-item{
+    background: #bbc8eb;
+    border:1px solid #8d8d8d;
+    padding:4px;
+    border-radius: 5px;
+    box-shadow: 2px 1px 3px 0px #888888;
+	font-size: 20px;
+}
+.car-item a{
+   display: block;
+}.car-item a:hover{
+   color: #066eed;
+}
+
+.back-link{
+    color: white !important;
+    background: cornflowerblue;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#info-data{
+	color: #272728;
+    border: 1px solid #bbbbbb;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 767px){
+    #header{
+        flex-direction: column;
+        width:auto;
+    }
+    #car-block{
+        grid-template-columns: auto;
+    }
+}
