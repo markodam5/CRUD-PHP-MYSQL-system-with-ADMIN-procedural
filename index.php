@@ -16,7 +16,6 @@ if (isset($_GET['page'])) {
     // include('404.php');
 }
 
-//test
 
 // Determine what page to display:
 switch ($p) {
