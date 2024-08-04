@@ -1,0 +1,35 @@
+# .htaccess
+<IfModule mod_rewrite.c>
+
+#Options +FollowSymLinks
+
+# Turn on the engine:
+RewriteEngine on
+
+# Set the base to this directory:
+#RewriteBase /basic_/
+
+# Redirect certain paths to index.php:
+RewriteRule ^(home|view_cars|details|insert|update|delete|login|loggedin|logout)/?$ index.php?page=$1
+
+RewriteRule ^(.*)-(.*)/?$ index.php?page=$1&id=$2
+#details-1 this is an example from the top line
+
+ErrorDocument 404 "<H1>Page not found</H1><a href='./'>Back to home page</a>"
+#ErrorDocument 404 /404page.php - This doesn't work
+
+</IfModule>
+
+# SECOND PART:
+
+# Disable directory browsing:
+#Options All -Indexes
+
+# Prevent folder listing:
+#IndexIgnore *
+
+# Prevent access to any file:
+#<FilesMatch "^.*$">
+#Order Allow,Deny
+#Deny from all
+#</FilesMatch>
