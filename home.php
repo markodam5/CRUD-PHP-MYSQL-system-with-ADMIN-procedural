@@ -3,7 +3,8 @@
       <div id="car-block">
         
         <?php
-        if(mysqli_connect_error()){
+  
+            if(mysqli_connect_error()){
                 echo "Error in connection";
             }else{
                 $res = mysqli_query($conn,"select * from products");

@@ -1,11 +1,16 @@
 a:link,a:visited {color:#094186;text-decoration:none;}
 a:hover {color:#051b36;}
 
+body{
+    margin:0;
+    padding:0;
+}
+
 #wrapper{
     background: #d3e0f9;
     min-height: 100vh;
-    padding: 10px;
-    border-radius: 5px;
+    /* padding: 10px; */
+    /* border-radius: 5px; */
 }
 
 #header{
@@ -32,11 +37,12 @@ a:hover {color:#051b36;}
     padding: 5px;
 }
 
-#car-block{
+/* #car-block{
     display: grid;
     grid-template-columns: auto auto auto auto;
     gap: 5px;
-}
+} */
+
 .car-item{
     background: #bbc8eb;
     border:1px solid #8d8d8d;
@@ -44,11 +50,16 @@ a:hover {color:#051b36;}
     border-radius: 5px;
     box-shadow: 2px 1px 3px 0px #888888;
 	font-size: 20px;
+    width: 50%;
+    margin-bottom: 7px;
 }
 .car-item a{
    display: block;
 }.car-item a:hover{
    color: #066eed;
+}
+.car-item:last-child{
+    margin-bottom: 0;
 }
 
 .back-link{

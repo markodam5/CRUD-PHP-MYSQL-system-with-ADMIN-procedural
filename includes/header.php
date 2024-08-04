@@ -9,6 +9,7 @@
 
         <title><?php echo $page_title; ?></title>
     </head>
+    
     <body>
 
         <div id="wrapper">
